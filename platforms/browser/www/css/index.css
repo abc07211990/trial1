@@ -27,8 +27,9 @@
 }
 
 
-.warning0 {
-    width:30%;
+.warningN {
+    
+    width:50%;
     
 /*    display: block;*/
     margin-left: auto;
@@ -48,7 +49,7 @@
     animation-duration:0.5s;
     animation-iteration-count: infinite;
     
-    width:30%;
+    width:50%;
     
 /*    display: block;*/
     margin-left: auto;
@@ -60,6 +61,11 @@
     margin:auto;
     width:50%;
     padding:3px;
+}
+
+.centerTable{
+margin:0px auto;
+font-size:10px;
 }
 
 .contentA {

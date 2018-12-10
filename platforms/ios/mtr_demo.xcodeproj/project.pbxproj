@@ -41,7 +41,6 @@
 		3914D410DF74452BB6E86739 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F697DE937A843B88163A244 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		92DC9C6595434703B9223F44 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8AC08DA5EF47DB9C064D16 /* CoreTelephony.framework */; };
 		9272C473BBDC4FBD8C4BFEA6 /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1F7CC507DB4D29808A09B7 /* CDVVibration.m */; };
-		0C6803966F1E4E93B742D7F9 /* CDVNavigationWhitelistPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CB812FC4403A4A6FA12B2B06 /* CDVNavigationWhitelistPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,8 +123,6 @@
 		BE8AC08DA5EF47DB9C064D16 /* CoreTelephony.framework */ = {isa = PBXFileReference; name = "CoreTelephony.framework"; path = "System/Library/Frameworks/CoreTelephony.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		EE1F7CC507DB4D29808A09B7 /* CDVVibration.m */ = {isa = PBXFileReference; name = "CDVVibration.m"; path = "cordova-plugin-vibration/CDVVibration.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		083724F0E58D474F830B4FB5 /* CDVVibration.h */ = {isa = PBXFileReference; name = "CDVVibration.h"; path = "cordova-plugin-vibration/CDVVibration.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		CB812FC4403A4A6FA12B2B06 /* CDVNavigationWhitelistPlugin.m */ = {isa = PBXFileReference; name = "CDVNavigationWhitelistPlugin.m"; path = "cordova-plugin-whitelist/CDVNavigationWhitelistPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		1ED92192753548AFAF146250 /* CDVNavigationWhitelistPlugin.h */ = {isa = PBXFileReference; name = "CDVNavigationWhitelistPlugin.h"; path = "cordova-plugin-whitelist/CDVNavigationWhitelistPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,8 +275,6 @@
 				F230B93243704AE1B6AA4498 /* CDVReachability.h */,
 				EE1F7CC507DB4D29808A09B7 /* CDVVibration.m */,
 				083724F0E58D474F830B4FB5 /* CDVVibration.h */,
-				CB812FC4403A4A6FA12B2B06 /* CDVNavigationWhitelistPlugin.m */,
-				1ED92192753548AFAF146250 /* CDVNavigationWhitelistPlugin.h */,
 			);
 			name = Plugins;
 			path = "mtr_demo/Plugins";
@@ -410,7 +405,6 @@
 				B748AB19E8DB4E3A9D0DC4DA /* CDVConnection.m in Sources */,
 				67B5A87B1DA64AF083EE772E /* CDVReachability.m in Sources */,
 				9272C473BBDC4FBD8C4BFEA6 /* CDVVibration.m in Sources */,
-				0C6803966F1E4E93B742D7F9 /* CDVNavigationWhitelistPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

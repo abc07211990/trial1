@@ -42,9 +42,6 @@
     },
     "cordova-plugin-vibration": {
       "PACKAGE_NAME": "com.phonegap.mtr_demo"
-    },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.phonegap.mtr_demo"
     }
   },
   "dependent_plugins": {

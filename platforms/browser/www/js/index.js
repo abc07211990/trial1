@@ -67,16 +67,31 @@ function getjsonp()
 	$.getJSON(path_j, function(result)
 	{
 		console.log("hihi")
+		var date = new Date
 		
 		$('#Cam_id').html(result.camid);
 		$('#Update').html(result.date + " " + result.time);
-		$('#warn_sign').html("<img class=\"warning\" http://" + address + "/img/Img/Warn/" + result.warnSign + ".png\">");
+		
+		if (result.warnSign == 0) {var blink = "\"warningN\""}
+		else { var blink = "\"warning\"" }
+		
+		$('#warn_sign').html("<img class=" + blink + "src=http://" + address + "/img/Img/Warn/" + result.warnSign + ".png>");
+		
         $('#warn_Msg').html(result.warnMsg);
-        $('#warn_Det').html(result.detail);
-        console.log(result.detail)
-        var img_s = "<img class=\"result\" src=http://" + address + "/img/" + result.image + ">"
+        
+        var img_s = "<img class=\"result\" src=http://" + address + "/img/" + result.image + "?" + date.getTime() + ">"
         console.log(img_s)
 		$('#Result').html(img_s);
+		
+		console.log(result.detail)
+		var detail = "<table border=1 class=\"centerTable\">"
+		detail += "<tr><td>Yline\[A|B|C\]</td><td>" + result.detail.Y + "</td></tr>"
+		detail += "<tr><td>Train\[N|M|O|S\]</td><td>" + result.detail.T + "</td></tr>"
+		detail += "<tr><td>Help\[H|L|N\]</td><td>" + result.detail.H + "</td></tr>"
+		detail += "<tr><td>Adnormal\[D|N|R|Si|Sq\]</td><td>" + result.detail.A + "</td></tr>"
+		detail += "<tr><td>OnTrack\[N|O\]</td><td>" + result.detail.O + "</td></tr>"
+		detail += "</table>"
+		$('#warn_Det').html(detail);
 		
 			
 		
