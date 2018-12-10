@@ -1,0 +1,67 @@
+.result
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+}
+
+/*
+.thumbnail
+{
+	width:60px;
+	height:auto;
+	padding:3px;
+	border:1px #999 solid;
+	margin: 5px;
+}
+*/
+
+.custom_bar {
+    position: fixed;
+    
+    width: 100%;
+    background-color: #808080;
+    color: black;
+    text-align: center;
+}
+
+
+.warning0 {
+    width:30%;
+    
+/*    display: block;*/
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+@keyframes blinking {
+    0% {opacity:1;}
+    50% {opacity:1;}
+    51% {opacity:0;}
+    100% {opacity:0;}
+}
+
+.warning {
+    animation-name:blinking;
+    animation-duration:0.5s;
+    animation-iteration-count: infinite;
+    
+    width:30%;
+    
+/*    display: block;*/
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.block1 {
+    margin:auto;
+    width:50%;
+    padding:3px;
+}
+
+.contentA {
+    text-align: center;
+}
