@@ -1,19 +1,7 @@
-//var address = "";
-//var latest = new Date();
-//var cam = 0;
-//
-//$('#Update').html(latest.getFullYear() + "/" + latest.getMonth() + "/" + latest.getDate() + "  " + 
-//	latest.getHours() + ":" + latest.getMinutes() + ":" + latest.getSeconds());
-//$('#Cam_id').html(cam);
-//var warnid = [1, 2];
-//var sign = "<img class=\"warning\" src=\"img/Warn/" + warnid[0] + ".png\">";
-//var sign = sign + "<img class=\"warning\" src=\"img/Warn/" + warnid[1] + ".png\">";
-//$('#warn_sign').html(sign);
-
-//var result_s = "<img class=\"result\" src=\"img/platform.jpeg\">";
-//$('#Result').html(result_s);
-//
+//var address = '';
+//console.log('hi');
 $(document).ready(function(){
+    
     document.addEventListener("deviceready", function(){
 		address = prompt("Server IP", "192.168.2.5:5000");
 		
@@ -22,32 +10,7 @@ $(document).ready(function(){
     });
 });
 
-/*
-function update_f()
-{
-	var latest = new Date();
-	var cam = 0;
-	$('#Update').html(latest.getFullYear() + "/" + latest.getMonth() + "/" + latest.getDate() + "  " + 
-	latest.getHours() + ":" + latest.getMinutes() + ":" + latest.getSeconds());
-	$('#Cam_id').html(cam);
-	var warnid = [1, 2, 3, 4];
-	var sign = "";
-	for (var i = 0; i < warnid.length; i++)
-	{
-		var sign = sign + "<img class=\"warning\" src=\"img/Warn/" + warnid[i] + ".png\">";
-	}
 
-	//var sign = sign + "<img class=\"warning\" src=\"img/Warn/" + warnid[0] + ".png\">";
-	//var sign = sign + "<img class=\"warning\" src=\"img/Warn/" + warnid[1] + ".png\">";
-	$('#warn_sign').html(sign);
-	path_i = "img/platform.jpeg";
-	var result_s = "<img class=\"result\" src=\"" + path_i + "\">";
-	$('#Result').html(result_s);
-
-
-	setTimeout("update_f()",500);
-}
-*/
 
 /*
 json format
@@ -73,13 +36,13 @@ function getjsonp()
         var img_s = document.getElementById("warn_sign");
         var imP_s = "http://" + address + "/img/Img/Warn" + result.warnSign + ".png";
         if (result.warnSign == 0) {img_s.className = "warningN";}
-        else { img_s.className = "warning";};
+        else { img_s.className = "warning";}
         var im_s = new Image();
         im_s.onload = function(){ img_s.src = this.src;};
         im_s.src = imP_s;
         
         var img_r = document.getElementById("Result");
-        var imP_r = "http://" + address + "/img/" + result.image + "?" + date.getTime()";
+        var imP_r = "http://" + address + "/img/" + result.image + "?" + date.getTime();
         var im_r = new Image();
         im_r.onload = function(){ img_r.src = this.src;};
         im_r.src = imP_r;
@@ -125,7 +88,7 @@ function getjsonp()
 			$('#warn_Det').html("NA");
 			//var img_s = "<img class=\"result\" src=./img/NoService.jpg>"
 			//$('#Result').html(img_s);
-            document.getElementById("warn_sign").src="./img/NoService.jpg";
+            document.getElementById("Result").src="./img/NoService.jpg";
             //address = prompt("Not Connected, \nPlease try with other ip:", address);
         });
 	setTimeout("getjsonp()",500);
