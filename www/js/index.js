@@ -57,7 +57,11 @@ function getjsonp()
 		$('#Update').html(result.date + " " + result.time);
 		
 		if (result.warnSign == 0) {var blink = "\"warningN\""}
-		else { var blink = "\"warning\"" }
+		else 
+            { 
+                var blink = "\"warning\"";
+                navigator.vibrate(500);
+            }
 		
 		
 		
