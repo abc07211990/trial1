@@ -90,7 +90,7 @@ function getjsonp()
             $('#Cam_id').html("NA");
 			$('#Update').html("NA");
 			$('#warn_Msg').html("NA");
-			$('#warn_Det').html("NA");
+			//$('#warn_Det').html("NA");
 			//var img_s = "<img class=\"result\" src=./img/NoService.jpg>"
 			//$('#Result').html(img_s);
             document.getElementById("Result").src="./img/NoService.jpg";
