@@ -56,10 +56,11 @@ function getjsonp()
         $('#Cam_id').html(result.camid);
 		$('#Update').html(result.date + " " + result.time);
 		
-		if (result.warnSign == 0) {var blink = "\"warningN\""}
+		if (result.warnSign == 0) {var blink = "\"warningN\"";}
 		else 
             { 
                 var blink = "\"warning\"";
+                navigator.notification.beep(1);
                 navigator.vibrate(500);
             }
 		
