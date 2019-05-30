@@ -78,7 +78,7 @@ function getjsonp()
 		detail += "<tr><td>Adnormal\[D|N|R|Si|Sq\]</td><td>" + result.detail.A + "</td></tr>"
 		detail += "<tr><td>OnTrack\[N|O\]</td><td>" + result.detail.O + "</td></tr>"
 		detail += "</table>"
-		$('#warn_Det').html(detail);
+		//$('#warn_Det').html(detail);
 		
 			
 		

@@ -34,7 +34,7 @@ function getjsonp()
 		
         
         var img_s = document.getElementById("warn_sign");
-        var imP_s = "http://" + address + "/img/Img/Warn" + result.warnSign + ".png";
+        var imP_s = "http://" + address + "/img/Img/Warn/" + result.warnSign + ".png";
         if (result.warnSign == 0) {img_s.className = "warningN";}
         else { img_s.className = "warning";}
         var im_s = new Image();
@@ -56,8 +56,13 @@ function getjsonp()
         $('#Cam_id').html(result.camid);
 		$('#Update').html(result.date + " " + result.time);
 		
-		if (result.warnSign == 0) {var blink = "\"warningN\""}
-		else { var blink = "\"warning\"" }
+		if (result.warnSign == 0) {var blink = "\"warningN\"";}
+		else 
+            { 
+                var blink = "\"warning\"";
+                navigator.notification.beep(1);
+                navigator.vibrate(500);
+            }
 		
 		
 		
